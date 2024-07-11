@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Photo } from "../data/photos";
 
-interface PhotoDisplayProps {
+type PhotoDisplayProps = {
   category: string;
   photos: Photo[];
-}
+};
 
-const PhotoDisplay: React.FC<PhotoDisplayProps> = ({ category, photos }) => {
+export function PhotoDisplay({ category, photos }: PhotoDisplayProps) {
   const [currentPhoto, setCurrentPhoto] = useState<Photo | null>(null);
 
-  const selectRandomPhoto = () => {
+  const selectRandomPhoto = useCallback(() => {
     const filteredPhotos =
       category === "Zufällig"
         ? photos
@@ -18,11 +18,11 @@ const PhotoDisplay: React.FC<PhotoDisplayProps> = ({ category, photos }) => {
     const randomPhoto =
       filteredPhotos[Math.floor(Math.random() * filteredPhotos.length)];
     setCurrentPhoto(randomPhoto);
-  };
+  }, [category, photos]);
 
   useEffect(() => {
     selectRandomPhoto();
-  }, [category, photos]);
+  }, [selectRandomPhoto]);
 
   if (!currentPhoto) return null;
 
@@ -38,6 +38,4 @@ const PhotoDisplay: React.FC<PhotoDisplayProps> = ({ category, photos }) => {
       />
     </div>
   );
-};
-
-export default PhotoDisplay;
+}

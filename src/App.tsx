@@ -1,9 +1,8 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import StartPage from "./components/StartPage";
-import PhotoPage from "./components/PhotoPage";
+import { StartPage } from "./components/StartPage";
+import { PhotoPage } from "./components/PhotoPage";
 
-const App: React.FC = () => {
+export function App() {
   return (
     <Router>
       <Routes>
@@ -12,6 +11,4 @@ const App: React.FC = () => {
       </Routes>
     </Router>
   );
-};
-
-export default App;
+}

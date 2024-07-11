@@ -1,9 +1,8 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Button from "./Button";
+import { Header } from "./Header";
+import { Button } from "./Button";
 
-const StartPage: React.FC = () => {
+export function StartPage() {
   const navigate = useNavigate();
   const categories: string[] = [
     "baden",
@@ -48,6 +47,4 @@ const StartPage: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default StartPage;
+}

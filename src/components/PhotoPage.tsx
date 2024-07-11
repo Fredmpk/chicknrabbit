@@ -1,11 +1,11 @@
-import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Header from "./Header";
-import PhotoDisplay from "./PhotoDisplay";
-import Button from "./Button";
+import { Header } from "./Header";
+import { PhotoDisplay } from "./PhotoDisplay";
 import { photos } from "../data/photos";
+import { useState } from "react";
+import { Button } from "./Button";
 
-const PhotoPage: React.FC = () => {
+export function PhotoPage() {
   const { category } = useParams<{ category: string }>();
   const navigate = useNavigate();
   const [refreshKey, setRefreshKey] = useState(0);
@@ -34,6 +34,4 @@ const PhotoPage: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default PhotoPage;
+}
