@@ -1,9 +1,9 @@
 {
-    "short_name": "ReactApp",
-    "name": "My React Application",
+    "short_name": "ChicknRabbit",
+    "name": "Ein Küken und ein Kaninchen",
     "icons": [
       {
-        "src": "icon.png",
+        "src": "/img/icon-chicknrabbit.png",
         "type": "image/png",
         "sizes": "512x512"
       }
