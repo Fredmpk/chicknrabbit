@@ -25,7 +25,7 @@ const StartPage: React.FC = () => {
       className="min-h-screen bg-cover bg-center flex flex-col"
       style={{
         backgroundImage: "url('/img/background.jpg')",
-        backgroundPosition: "center top -50px",
+        backgroundPosition: "center top -20px",
       }}
     >
       <div className="bg-black bg-opacity-50 min-h-screen flex flex-col">
