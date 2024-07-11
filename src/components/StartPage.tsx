@@ -10,7 +10,6 @@ const StartPage: React.FC = () => {
     "wandern",
     "picknicken",
     "chillen",
-    "rennen",
     "spielen",
     "fahren",
     "Zufällig",
