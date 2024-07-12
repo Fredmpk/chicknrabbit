@@ -68,5 +68,16 @@ export interface Photo {
     { src: '/img/58.jpg', alt: 'see', category: 'wandern' },
     { src: '/img/59.jpg', alt: 'see', category: 'chillen' },
     { src: '/img/60.jpg', alt: 'see', category: 'chillen' },
+    { src: '/img/61.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/62.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/63.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/64.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/65.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/66.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/67.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/68.jpg', alt: 'see', category: 'fahren' },
+    { src: '/img/69.jpg', alt: 'see', category: 'picknicken' },
+    { src: '/img/70.jpg', alt: 'see', category: 'picknicken' },
+    { src: '/img/71.jpg', alt: 'see', category: 'picknicken' },
     // Add more photos here...
   ];
