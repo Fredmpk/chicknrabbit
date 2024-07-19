@@ -4,9 +4,14 @@ import { Photo } from "../data/photos";
 type PhotoDisplayProps = {
   category: string;
   photos: Photo[];
+  onPhotoChange: (photo: Photo | null) => void;
 };
 
-export function PhotoDisplay({ category, photos }: PhotoDisplayProps) {
+export function PhotoDisplay({
+  category,
+  photos,
+  onPhotoChange,
+}: PhotoDisplayProps) {
   const [currentPhoto, setCurrentPhoto] = useState<Photo | null>(null);
 
   const selectRandomPhoto = useCallback(() => {
@@ -18,7 +23,8 @@ export function PhotoDisplay({ category, photos }: PhotoDisplayProps) {
     const randomPhoto =
       filteredPhotos[Math.floor(Math.random() * filteredPhotos.length)];
     setCurrentPhoto(randomPhoto);
-  }, [category, photos]);
+    onPhotoChange(randomPhoto);
+  }, [category, photos, onPhotoChange]);
 
   useEffect(() => {
     selectRandomPhoto();

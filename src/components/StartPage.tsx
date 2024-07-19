@@ -11,6 +11,7 @@ export function StartPage() {
     "chillen",
     "spielen",
     "fahren",
+    "lesen",
     "Zufällig",
   ];
 
