@@ -17,9 +17,12 @@ export function PhotoPage() {
 
   const handleDownload = () => {
     if (currentPhoto) {
+      const numberFromSrc =
+        currentPhoto.src.match(/\/img\/(\d+)\.jpg/)?.[1] || "";
+      const altText = `${numberFromSrc} ${currentPhoto.alt}`;
       const link = document.createElement("a");
       link.href = currentPhoto.src;
-      link.download = currentPhoto.alt;
+      link.download = altText;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
