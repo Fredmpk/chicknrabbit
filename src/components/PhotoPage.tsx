@@ -30,27 +30,19 @@ export function PhotoPage() {
   };
 
   return (
-    <div className="min-h-screen bg-amber-50 flex flex-col">
+    <div className="container mx-auto px-4 bg-orange-200">
       <Header />
-      <div className="flex-grow flex flex-col p-4">
-        <Button onClick={handleNewPhotoClick} className="mb-4">
-          Neues Bild
-        </Button>
-        <Button onClick={handleDownload} className="mb-4">
-          Download
-        </Button>
-        <Button onClick={() => navigate("/")} className="mb-4">
-          Zurück
-        </Button>
-        <div className="flex-grow flex items-center justify-center">
-          <PhotoDisplay
-            key={refreshKey}
-            category={category || ""}
-            photos={photos}
-            onPhotoChange={setCurrentPhoto}
-          />
-        </div>
+      <div className="flex justify-center m-4 space-x-4">
+        <Button onClick={handleNewPhotoClick}>Neues Bild</Button>
+        <Button onClick={handleDownload}>Download</Button>
+        <Button onClick={() => navigate("/")}>Zurück</Button>
       </div>
+      <PhotoDisplay
+        category={category || "Zufällig"}
+        photos={photos}
+        onPhotoChange={setCurrentPhoto}
+        refreshKey={refreshKey}
+      />
     </div>
   );
 }
