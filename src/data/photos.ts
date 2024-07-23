@@ -104,5 +104,15 @@ export const photos: Photo[] = [
   { src: "/img/94.jpg", alt: "lesen", category: "lesen" },
   { src: "/img/95.jpg", alt: "lesen", category: "lesen" },
   { src: "/img/96.jpg", alt: "lesen", category: "lesen" },
+  { src: "/img/97.jpg", alt: "reden", category: "reden" },
+  { src: "/img/98.jpg", alt: "reden", category: "reden" },
+  { src: "/img/99.jpg", alt: "reden", category: "reden" },
+  { src: "/img/100.jpg", alt: "reden", category: "reden" },
+  { src: "/img/101.jpg", alt: "heilen", category: "heilen" },
+  { src: "/img/102.jpg", alt: "reden", category: "reden" },
+  { src: "/img/103.jpg", alt: "reden", category: "reden" },
+  { src: "/img/104.jpg", alt: "reden", category: "reden" },
+  { src: "/img/105.jpg", alt: "heilen", category: "heilen" },
+  { src: "/img/106.jpg", alt: "heilen", category: "heilen" },
   // Add more photos here...
 ];
