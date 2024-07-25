@@ -12,9 +12,10 @@ export function StartPage() {
     "spielen",
     "fahren",
     "lesen",
-    "reden",
-    "heilen",
+    "pflegen",
+    "kochen",
     "Zufällig",
+    "neu",
   ];
 
   const handleCategoryClick = (category: string) => {

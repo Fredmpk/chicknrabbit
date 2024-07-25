@@ -6,6 +6,7 @@ type PhotoDisplayProps = {
   photos: Photo[];
   onPhotoChange: (photo: Photo | null) => void;
   refreshKey: number;
+  onClick: () => void;
 };
 
 export function PhotoDisplay({
@@ -13,6 +14,7 @@ export function PhotoDisplay({
   photos,
   onPhotoChange,
   refreshKey,
+  onClick,
 }: PhotoDisplayProps) {
   const [randomizedPhotos, setRandomizedPhotos] = useState<Photo[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +24,7 @@ export function PhotoDisplay({
     const filteredPhotos =
       category === "Zufällig"
         ? photos
-        : photos.filter((photo) => photo.category === category);
+        : photos.filter((photo) => photo.categories.includes(category));
     const shuffled = [...filteredPhotos].sort(() => Math.random() - 0.5);
     setRandomizedPhotos(shuffled);
     setCurrentIndex(0);
@@ -57,12 +59,15 @@ export function PhotoDisplay({
 
   return (
     <div className="flex flex-col items-center">
+      {message && (
+        <p className="text-3xl mt-4 text-center text-green-500">{message}</p>
+      )}
       <img
         src={currentPhoto.src}
         alt={currentPhoto.alt}
         className="max-w-full h-auto"
+        onClick={onClick}
       />
-      {message && <p className="mt-4 text-center text-green-500">{message}</p>}
     </div>
   );
 }

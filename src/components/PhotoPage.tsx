@@ -33,11 +33,11 @@ export function PhotoPage() {
     <div className="container mx-auto px-4 bg-orange-200">
       <Header />
       <div className="flex justify-center m-4 space-x-4">
-        <Button onClick={handleNewPhotoClick}>Neues Bild</Button>
         <Button onClick={handleDownload}>Download</Button>
         <Button onClick={() => navigate("/")}>Zurück</Button>
       </div>
       <PhotoDisplay
+        onClick={handleNewPhotoClick}
         category={category || "Zufällig"}
         photos={photos}
         onPhotoChange={setCurrentPhoto}
