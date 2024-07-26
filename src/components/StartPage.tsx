@@ -1,9 +1,12 @@
+// Import necessary components and hooks
 import { useNavigate } from "react-router-dom";
 import { Header } from "./Header";
 import { Button } from "./Button";
 
 export function StartPage() {
   const navigate = useNavigate();
+
+  // Define categories array
   const categories: string[] = [
     "baden",
     "wandern",
@@ -18,10 +21,12 @@ export function StartPage() {
     "neu",
   ];
 
+  // Function to handle category button clicks
   const handleCategoryClick = (category: string) => {
     navigate(`/photo/${category}`);
   };
 
+  // Render the start page with a background image and category buttons
   return (
     <div
       className="min-h-screen bg-cover bg-center flex flex-col"
@@ -34,8 +39,6 @@ export function StartPage() {
         <Header />
         <div className="flex-grow flex flex-col p-4">
           <div className="mt-8 mb-auto">
-            {" "}
-            {/* This pushes the buttons up */}
             <div className="grid grid-cols-2 gap-4">
               {categories.map((category) => (
                 <Button

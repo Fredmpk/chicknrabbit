@@ -1,6 +1,8 @@
+// Import necessary hooks and types
 import { useState, useEffect, useCallback } from "react";
 import { Photo } from "../data/photos";
 
+// Define props for PhotoDisplay component
 type PhotoDisplayProps = {
   category: string;
   photos: Photo[];
@@ -20,6 +22,7 @@ export function PhotoDisplay({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [message, setMessage] = useState("");
 
+  // Function to shuffle and filter photos based on category
   const shufflePhotos = useCallback(() => {
     const filteredPhotos =
       category === "Zufällig"
@@ -31,10 +34,12 @@ export function PhotoDisplay({
     setMessage("");
   }, [category, photos]);
 
+  // Effect to reshuffle photos when category changes
   useEffect(() => {
     shufflePhotos();
-  }, [shufflePhotos, category]); // Only reshuffle when category changes
+  }, [shufflePhotos, category]);
 
+  // Effect to update current photo and message
   useEffect(() => {
     if (randomizedPhotos.length > 0) {
       onPhotoChange(randomizedPhotos[currentIndex]);
@@ -46,17 +51,17 @@ export function PhotoDisplay({
     }
   }, [currentIndex, randomizedPhotos, onPhotoChange]);
 
+  // Effect to advance to next photo when refreshKey changes
   useEffect(() => {
-    // Advance to next photo when refreshKey changes
     if (randomizedPhotos.length > 0) {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % randomizedPhotos.length);
     }
   }, [refreshKey, randomizedPhotos.length]);
 
   if (randomizedPhotos.length === 0) return null;
-
   const currentPhoto = randomizedPhotos[currentIndex];
 
+  // Render the current photo and message
   return (
     <div className="flex flex-col items-center">
       {message && (

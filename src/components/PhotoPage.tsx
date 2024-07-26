@@ -1,3 +1,4 @@
+// Import necessary components, hooks, and data
 import { useParams, useNavigate } from "react-router-dom";
 import { Header } from "./Header";
 import { PhotoDisplay } from "./PhotoDisplay";
@@ -11,10 +12,12 @@ export function PhotoPage() {
   const [refreshKey, setRefreshKey] = useState(0);
   const [currentPhoto, setCurrentPhoto] = useState<Photo | null>(null);
 
+  // Function to handle new photo button click
   const handleNewPhotoClick = () => {
     setRefreshKey((prevKey) => prevKey + 1);
   };
 
+  // Function to handle photo download
   const handleDownload = () => {
     if (currentPhoto) {
       const numberFromSrc =
@@ -29,6 +32,7 @@ export function PhotoPage() {
     }
   };
 
+  // Render the photo page with download and back buttons, and PhotoDisplay component
   return (
     <div className="container mx-auto px-4 bg-orange-200">
       <Header />
