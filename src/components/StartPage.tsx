@@ -17,7 +17,7 @@ export function StartPage() {
     "lesen",
     "pflegen",
     "kochen",
-    "dance",
+    "dancen",
     "Zufällig",
     "neu",
   ];
