@@ -146,11 +146,6 @@ export const photos: Photo[] = [
   { src: "/img/139.jpg", alt: "pflegen", categories: ["pflegen"] },
   { src: "/img/140.jpg", alt: "pflegen", categories: ["pflegen"] },
   {
-    src: "/img/140.jpg",
-    alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
-  },
-  {
     src: "/img/141.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
@@ -162,6 +157,11 @@ export const photos: Photo[] = [
   },
   {
     src: "/img/143.jpg",
+    alt: "telefonieren",
+    categories: ["telefonieren", "neu"],
+  },
+  {
+    src: "/img/144.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
   },
