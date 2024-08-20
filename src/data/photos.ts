@@ -145,25 +145,36 @@ export const photos: Photo[] = [
   { src: "/img/138.jpg", alt: "pflegen", categories: ["pflegen"] },
   { src: "/img/139.jpg", alt: "pflegen", categories: ["pflegen"] },
   { src: "/img/140.jpg", alt: "pflegen", categories: ["pflegen"] },
+  { src: "/img/141.jpg", alt: "telefonieren", categories: ["telefonieren"] },
+  { src: "/img/142.jpg", alt: "telefonieren", categories: ["telefonieren"] },
+  { src: "/img/143.jpg", alt: "telefonieren", categories: ["telefonieren"] },
+  { src: "/img/144.jpg", alt: "telefonieren", categories: ["telefonieren"] },
+  // prettier ignore
   {
-    src: "/img/141.jpg",
+    src: "/img/145.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
   },
   {
-    src: "/img/142.jpg",
+    src: "/img/146.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
   },
   {
-    src: "/img/143.jpg",
+    src: "/img/147.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
   },
   {
-    src: "/img/144.jpg",
+    src: "/img/148.jpg",
     alt: "telefonieren",
     categories: ["telefonieren", "neu"],
   },
+  {
+    src: "/img/1449.jpg",
+    alt: "telefonieren",
+    categories: ["telefonieren", "neu"],
+  },
+  // prettier ignore
   // Add more photos here...
 ];
