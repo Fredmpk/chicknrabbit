@@ -19,6 +19,7 @@ export function StartPage() {
     "kochen",
     "dancen",
     "telefonieren",
+    "feiern",
     "Zufällig",
     "neu",
   ];

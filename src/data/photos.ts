@@ -153,28 +153,36 @@ export const photos: Photo[] = [
   {
     src: "/img/145.jpg",
     alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
+    categories: ["telefonieren"],
   },
   {
     src: "/img/146.jpg",
     alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
+    categories: ["telefonieren"],
   },
   {
     src: "/img/147.jpg",
     alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
+    categories: ["telefonieren"],
   },
   {
     src: "/img/148.jpg",
     alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
+    categories: ["telefonieren"],
   },
   {
-    src: "/img/1449.jpg",
+    src: "/img/149.jpg",
     alt: "telefonieren",
-    categories: ["telefonieren", "neu"],
+    categories: ["telefonieren"],
   },
-  // prettier ignore
-  // Add more photos here...
+  { src: "/img/150.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/151.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/152.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/153.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/154.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/155.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/156.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/157.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/158.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/159.jpg", alt: "feiern", categories: ["feiern", "neu"] },
 ];
