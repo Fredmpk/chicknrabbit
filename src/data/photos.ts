@@ -186,4 +186,8 @@ export const photos: Photo[] = [
   { src: "/img/158.jpg", alt: "feiern", categories: ["feiern"] },
   { src: "/img/159.jpg", alt: "feiern", categories: ["feiern"] },
   { src: "/img/160.jpg", alt: "fahren", categories: ["fahren", "neu"] },
+  { src: "/img/161.jpg", alt: "fahren", categories: ["fahren", "neu"] },
+  { src: "/img/162.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/163.jpg", alt: "feiern", categories: ["feiern", "neu"] },
+  { src: "/img/164.jpg", alt: "feiern", categories: ["feiern", "neu"] },
 ];
